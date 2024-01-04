@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Amatic SC", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #212529;
+  --color-primary: #ce1212;
+  --color-secondary: #37373f;
+}
+
+
+:root{
+    --sub-bg-color: #283780;
+    --sub-text-color: #8db600;
+    --sub-white: #f5f5f5;
+    --sub-dark: #4f4f4f;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ec2727;
+  text-decoration: none !important ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+}
+
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #5fcf80;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #5fcf80;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #7ed899;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+  
+nav{
+  background-color: var(--sub-bg-color);
+}
+
+.hero{
+  height: 90vh;
+  width: 100%;
+}
+.hero img{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.hero-content{
+  background-color: var(--sub-dark);
+  position: absolute;
+  top: 200px;
+  left: 6%;
+  right: 6%;
+  min-width: 300px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .7;
+}
+.hero-content h3{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+.defBtn{
+  background-color: var(--color-secondary);
+  color: var(--sub-white);
+  /* font-size: 1.1rem; */
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 5px;
+  /* width: 6rem; */
+}
+.defBtn.active{
+  background-color: var(--sub-text-color);
+  color: var(--color-secondary);
+  
+}
+
+button.defBtn{
+  color: var(--sub-text-color);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family:  Geneva, Tahoma, sans-serif;
+  padding: 10px 55px;
+}
+.img-rounded{
+  border-radius: 10px;
+}
+/* ***********
+************General Section 
+***************/
+.section{
+  padding: 50px 20px;
+
+}
+.section-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--sub-white);
+  padding: 10px;
+  
+}
+.section-header h2{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--sub-bg-color);
+  font-weight: 700;
+}
+.section-header p{
+  font-size: 1.1rem;
+  word-spacing: .6rem;
+}
+.section nav{
+  background-color: transparent;
+}
+.brand-container{
+  padding: 10px;
+  background-color: var(--color-secondary);
+  border-radius: 15px;
+}
+.section .nav button{
+  background-color: #4f4f4f;
+
+}
+.tab-content img{
+  width: 250px;
+  height: 200px;
+}
+.service-box{
+  min-height: 200px;
+}
+.carousel-inner{
+  height: 300px;
+  margin-bottom: 100px;
+}
+.side{
+  background-color: #fff;
+  border: 1px solid var(--sub-dark);
+  min-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.side .defBtn{
+  background-color: var(--color-default);
+  padding: 10px;
+  width: 10rem;
+  margin-bottom: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.side .defBtn.active{
+  background-color: var(--sub-text-color);
+  color: var(--color-default);
+}
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: palevioletred;
+  flex-direction: column;
+}
+.right img{
+  width: 200px;
+  height: 150px;
+  margin: 5px;
+}
+.form-group.d-flex{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.form-group.d-flex label{
+  width: 200px;
+  /* background-color: gray; */
+  padding: 5px;
+ font-weight: 500;
+  
+}
+#contact{
+  background-image: url(img/white-offroader-jeep-parking.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contact .section, #contact .section-header{
+  background-color: transparent;
+}
+#contact .section-header h2{
+  color: var(--sub-text-color);
+  font-weight: bolder;
+  font-size: 2.3rem;
+}
+#contact .section-header p{
+  color: var(--sub-white);
+}
+#contact .form-control{
+  background-color: #fff;
+  opacity: .7;
+  color: var(--color-default);
+}
+#contact input::placeholder,
+#contact textarea::placeholder{
+  color: var(--color-default);
+}
+/* ***********
+************ Pre-footer aaand Footer
+***************/
+.pre-footer{
+  background-color: var(--bs-dark);
+  color: var(--sub-white);
+  padding: 6rem 30px 15px ;
+ 
+}
+.pre-footer ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.pre-footer ul  .fab{
+  background-color: var(--sub-bg-color);
+  color: var(--sub-white);
+  padding: 5px;
+  margin: 2px;
+  width: 1.5rem;
+}
+
+.pre-footer ul li:first-child{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+footer{
+  background-color: var(--sub-text-color);
+  color: var(--sub-white);
+}
