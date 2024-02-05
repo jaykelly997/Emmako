@@ -80,7 +80,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #5fcf80;
+  border: 6px solid var(--sub-bg-color);
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -121,7 +121,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5fcf80;
+  background: var(--sub-bg-color);
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -135,7 +135,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #7ed899;
+  background: #283780d0;
   color: #fff;
 }
 
