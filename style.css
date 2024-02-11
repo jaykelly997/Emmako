@@ -301,6 +301,43 @@ button.defBtn{
  font-weight: 500;
   
 }
+/*Brands 
+ */
+#brands{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#brands img{
+  width: 200px;
+  height: 150px;
+  padding: 5px;
+
+}
+#vehicle__alert .box{
+  position: relative;
+}
+#vehicle__alert .overview{
+  background-color: var(--sub-bg-color);
+  color: var(--sub-white);
+  padding: 10px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  width: calc(100% - 24px);
+  display: none;
+}
+#vehicle__alert .box:hover .overview{
+  display: block;
+}
+#vehicle__alert .overview-header{
+  font-size: 1.5rem;
+}
+#vehicle__alert .overview-text{
+  display:flex;
+  justify-content: space-between;
+}
+
 #contact{
   background-image: url(img/white-offroader-jeep-parking.jpg);
   background-repeat: no-repeat;
