@@ -238,6 +238,8 @@ button.defBtn{
   padding: 10px;
   background-color: var(--color-secondary);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
 }
 .section .nav button{
   background-color: #4f4f4f;
@@ -278,6 +280,20 @@ button.defBtn{
   background-color: var(--sub-text-color);
   color: var(--color-default);
 }
+
+.form-group.d-flex{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.form-group.d-flex label{
+  width: 200px;
+  /* background-color: gray; */
+  padding: 5px;
+  font-weight: 500;
+  
+}
+/*Brands 
+ */
 .right{
   display: flex;
   align-items: center;
@@ -289,35 +305,26 @@ button.defBtn{
   width: 200px;
   height: 150px;
   margin: 5px;
+  position: relative;
 }
-.form-group.d-flex{
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.form-group.d-flex label{
-  width: 200px;
-  /* background-color: gray; */
-  padding: 5px;
- font-weight: 500;
-  
-}
-/*Brands 
- */
 #brands{
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-#brands img{
-  width: 200px;
-  height: 150px;
-  padding: 5px;
+.tab-pane{
+  display: inline-flex !important;
+  height: auto;
 
 }
-#vehicle__alert .box{
+#vehicle__alert .box, #brand .box{
   position: relative;
 }
-#vehicle__alert .overview{
+#brand .box{
+  width: 275px;
+}
+
+#vehicle__alert .overview, #brand .overview{
   background-color: var(--sub-bg-color);
   color: var(--sub-white);
   padding: 10px;
@@ -327,14 +334,14 @@ button.defBtn{
   width: calc(100% - 24px);
   display: none;
 }
-#vehicle__alert .box:hover .overview{
+#vehicle__alert .box:hover .overview, #brand .box:hover .overview {
   display: block;
   transition: all .5s ease;
 }
-#vehicle__alert .overview-header{
+#vehicle__alert .overview-header, #brand .box:hover .overview-header{
   font-size: 1.5rem;
 }
-#vehicle__alert .overview-text{
+#vehicle__alert .overview-text, #brand .overview-text{
   display:flex;
   justify-content: space-between;
 }
