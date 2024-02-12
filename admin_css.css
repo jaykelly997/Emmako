@@ -24,3 +24,19 @@ nav{
     display: flex;
     flex-direction: column;
 }
+.right{
+    width: 20%;
+    height: 60%;
+    background-color: violet;
+    padding: 10px 5px 5px;
+}
+.right ul{
+    list-style: none;
+}
+.right ul li{
+    height: 50px;
+    background-color: var(--sub-white);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}

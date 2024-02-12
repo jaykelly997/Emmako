@@ -149,3 +149,29 @@ h6 {
 nav{
   background-color: var(--sub-bg-color);
 }
+/* ***********
+************General Section 
+***************/
+.section{
+    padding: 50px 20px;
+  
+  }
+  .section-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sub-white);
+    padding: 10px;
+    
+  }
+  .section-header h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--sub-bg-color);
+    font-weight: 700;
+  }
+  .section-header p{
+    font-size: 1.1rem;
+    word-spacing: .6rem;
+  }
