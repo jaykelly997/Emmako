@@ -175,3 +175,35 @@ nav{
     font-size: 1.1rem;
     word-spacing: .6rem;
   }
+  /* ***********
+************ Pre-footer aaand Footer
+***************/
+.pre-footer{
+    background-color: var(--bs-dark);
+    color: var(--sub-white);
+    padding: 6rem 30px 15px ;
+   
+  }
+  .pre-footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pre-footer ul  .fab{
+    background-color: var(--sub-bg-color);
+    color: var(--sub-white);
+    padding: 5px;
+    margin: 2px;
+    width: 1.5rem;
+  }
+  
+  .pre-footer ul li:first-child{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  footer{
+    background-color: var(--sub-text-color);
+    color: var(--sub-white);
+  }
