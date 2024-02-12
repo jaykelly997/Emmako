@@ -368,7 +368,13 @@ button.defBtn{
   padding: 20px;
   border-radius: 10px;
 }
-
+.product-details{
+  background-color: var(--sub-white);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
 #contact{
   background-image: url(img/white-offroader-jeep-parking.jpg);
   background-repeat: no-repeat;
