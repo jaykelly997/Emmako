@@ -175,6 +175,36 @@ nav{
     font-size: 1.1rem;
     word-spacing: .6rem;
   }
+
+
+
+/* 
+***********
+************ Button */
+.defBtn{
+  background-color: var(--color-secondary);
+  color: var(--sub-white);
+  /* font-size: 1.1rem; */
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 5px;
+  /* width: 6rem; */
+}
+.defBtn.active{
+  background-color: var(--sub-text-color);
+  color: var(--color-secondary);
+  
+}
+
+button.defBtn{
+  color: var(--sub-text-color);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family:  Geneva, Tahoma, sans-serif;
+  padding: 10px 55px;
+}
   /* ***********
 ************ Pre-footer aaand Footer
 ***************/
